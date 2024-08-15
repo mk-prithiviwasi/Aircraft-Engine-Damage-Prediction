@@ -1,0 +1,16 @@
+This repository contains code and analysis for predictive maintenance of aircraft engines using machine learning models. The goal is to predict the Remaining Useful Life (RUL) of aircraft engines based on sensor data, aiding in maintenance decision-making.
+Dataset
+The dataset used for this project is the C-MAPSS dataset, which provides sensor measurements and RUL labels for aircraft engines. The dataset is divided into training and testing sets. Sensor measurements include various parameters like temperatures, pressures, and rotations.
+Models Implemented
+Three machine learning models have been implemented and compared:
+1. Random Forest Regressor: This model uses the Random Forest algorithm to predict RUL based on sensor data.
+2. XGBoost Regressor: The XGBoost algorithm is used to predict RUL, and its performance is compared with the Random Forest model.
+3. LSTM (Long Short-Term Memory) Network: An LSTM network is designed for sequence prediction using sensor data. This deep learning approach captures sequential patterns in the data.
+Usage
+1. Data Preprocessing: The data_preprocessing.ipynb notebook contains code for loading, preprocessing, and exploring the dataset. It also prepares the data for training.
+2. Model Training and Evaluation: The model_training.ipynb notebook includes the training and evaluation of the Random Forest, XGBoost, and LSTM models. It compares their performance using metrics such as MAE, RMSE, and R2 score.
+3. Predictive Maintenance Strategies: The predictive_maintenance_strategies.ipynb notebook explores different strategies for improving prediction accuracy, such as individual predictions, single training, and multi-prediction averaging.
+4. Classification for Maintenance Decision: The maintenance_decision_classifier.ipynb notebook introduces a classifier to categorize engines into resource-exhausted and non-exhausted categories.
+Results and Analysis
+The results and analysis of each model, including performance metrics and graphical representations, can be found in the respective notebooks. The report.md file summarizes the overall findings and conclusions.
+
